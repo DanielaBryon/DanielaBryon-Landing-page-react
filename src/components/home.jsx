@@ -36,7 +36,7 @@ const Home = () => {    //variable con datos de la tarjeta.
     },
   ];
   return (
-    <div className="col-12">
+    <div>
       <Navbar/>
       <Jumbotron />
       <div className="container">
