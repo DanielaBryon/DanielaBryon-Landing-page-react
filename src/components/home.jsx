@@ -36,29 +36,32 @@ const Home = () => {    //variable con datos de la tarjeta.
     },
   ];
   return (
-    <div>
-      <Navbar />
+    <div className="col-12">
+      <Navbar/>
       <Jumbotron />
       <div className="container">
         <h1>Some of my work</h1>
         <div className="row">
           {cardData.map((card, index) => (
-            <div className="col-md-4" key={index}>
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index}>
               <Card
                 title={card.title}
                 text={card.text}
                 buttonText={card.buttonText}
-                image={card.image}
+                image={card.image} 
               />
             </div>
-          ))}
-        </div>
+          ))};
+        </div> 
+        <footer className="text-center mt-4">
+          <p>Copyright © Your Website 2019</p>
+        </footer>
       </div>
-      <footer className="text-center mt-4">
-        <p>Copyright © Your Website 2019</p>
-      </footer>
     </div>
-  );
+  )
 };
 
+
+
 export default Home;
+  

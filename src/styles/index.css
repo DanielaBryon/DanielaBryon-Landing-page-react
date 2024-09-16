@@ -3,6 +3,7 @@
     height: 500px;
     background-size: cover;
     background-position: center;
+    padding: 2px;
     font-family: "Playfair Display", serif;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
     
@@ -28,6 +29,7 @@
     margin: 0px 34px;
 }
 .lead {
+
     width: 770px;
     margin: 0px 64px;
 }
