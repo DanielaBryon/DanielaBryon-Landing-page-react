@@ -1,52 +1,68 @@
 .jumbotron {
-    margin: 14px 0px -54px;
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    padding: 2px;
-    font-family: "Playfair Display", serif;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
-    
+  margin: 14px 0px -54px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  padding: 2px;
+  font-family: "Playfair Display", serif;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
 }
-.logo{
-    width: 30px;
-    margin-left: 4px;
-    margin-right: 30px;
+.logo {
+  width: 30px;
+  margin-left: 4px;
+  margin-right: 30px;
 }
-.navbar-brand{
-    margin-left: 60px;
+.navbar-brand {
+  margin-left: 60px;
 }
-.navbar-nav{
-    margin-left: auto;
-    margin-right: 0px;
-
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0px;
 }
 .container {
-    font-family: "Playfair Display", serif;
-    margin: -65px 64px 32px 64px;
+  font-family: "Playfair Display", serif;
+  margin: -65px 64px 32px 64px;
 }
-.collapse{
-    margin: 0px 34px;
+.collapse {
+  margin: 0px 34px;
 }
 .lead {
+  width: 770px;
+  margin: 0px 64px;
+}
+.jumbo-tittle {
+  font-size: 90px;
+  margin: 54px 64px 20px;
+  font-weight: 600;
+  font-family: "Merriweather", serif;
+}
+.btn-primary {
+  width: 300px;
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 50px;
+  margin: 20px 64px 20px;
+}
 
-    width: 770px;
-    margin: 0px 64px;
+h1 {
+  font-weight: bold;
 }
-.jumbo-tittle{
-    font-size: 90px;
-    margin: 0px 64px 50px;
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
 }
-.btn-primary{
-    width: 300px;
-    background-color: black;
-    color: white;
-    border: black;
-    border-radius: 50px;
-    margin: 20px 64px 20px;
+.card-title{
+    font-weight: bold;
 }
-    
-    /*
+.btn-link{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*
 
     You can write your own styles here...
     
@@ -57,3 +73,113 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+
+@media screen and (min-width: 360px) and (max-width: 430px) {
+  .jumbotron {
+    margin: 12px 0 0 0;
+    height: auto;
+    min-height: 280px;
+    padding: 16px 8px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.12);
+  }
+  .jumbo-tittle {
+    font-size: 32px;
+    margin: 24px 8px 12px;
+    font-weight: 600;
+  }
+  .lead {
+    padding: 0 50px 0px 10px;
+    font-weight: 600;
+    width: 100%;
+    margin: 0 0 12px 0;
+    font-size: 16px;
+  }
+  .btn-primary {
+    width: 170px;
+    min-width: 120px;
+    max-width: 300px;
+    margin: 16px 0 8px 0;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .logo {
+    width: 28px;
+    margin-left: 4px;
+    margin-right: 8px;
+  }
+  .navbar-brand {
+    margin-left: 8px;
+  }
+  .navbar-nav {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container {
+    margin: 0 4vw 16px 4vw;
+    padding: 0;
+    width: 92vw;
+  }
+  .collapse {
+    margin: 0 0 0 10px;
+  }
+  h1 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .col-lg-4, .col-md-6, .col-sm-12, .mb-4 {
+    padding: 0 0 16px 0;
+    margin: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .card {
+    margin: 0 auto 16px auto;
+    width: 96vw;
+    max-width: 340px;
+    min-width: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+    border-radius: 12px;
+  }
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+  }
+  .card-body {
+    padding: 16px 12px;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .card-text {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .btn-link {
+    font-size: 15px;
+    padding: 8px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-radius: 24px;
+    background: #f4f4f4;
+    color: #222;
+    margin-top: 8px;
+  }
+  footer.text-center {
+    font-size: 13px;
+    margin-top: 24px;
+    padding-bottom: 12px;
+  }
+}
